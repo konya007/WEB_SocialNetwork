@@ -249,6 +249,7 @@ h3 {
     margin: auto;
     height: 240px;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .tag-story {
