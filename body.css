@@ -1,0 +1,636 @@
+.body {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+#plus {
+    font-size: 24px;
+    margin-top: 4px;
+    color: #ffffff;
+}
+
+
+/* ------------- */
+
+h2 {
+    font: normal 500 14px system-ui;
+    padding-left: 5px;
+    color: #ffffff;
+    margin: 8px 0 5px 0;
+}
+
+h3 {
+    font: normal 300 12px system-ui;
+    padding-left: 5px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 50px;
+}
+
+
+/* =============================================================== */
+
+.menu-left {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 20vw;
+    min-width: 240px;
+    position: relative;
+}
+
+
+/* =============================================================== */
+
+.menu-right {
+    box-sizing: border-box;
+    height: calc(100vh - 60px);
+    min-width: 300px;
+    width: 22vw;
+}
+
+.line-menu-r {
+    border-top: solid 1px #343536;
+    margin: 5px 10px 0 6px;
+    width: 90%;
+}
+
+.list-friend {
+    margin: 0;
+    list-style: none;
+    height: fit-content;
+    width: 95%;
+    min-width: 300px;
+    padding-left: 10px;
+    color: #fffcf8;
+}
+
+.obj-friend {
+    box-sizing: border-box;
+    display: flex;
+    height: fit-content;
+    margin-bottom: 0px;
+    padding: 5px 0 5px 5px;
+    border-radius: 14px;
+}
+
+.obj-friend:hover {
+    background-color: #343536;
+    cursor: pointer;
+}
+
+.avt-friend {
+    margin-top: 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 32.5px;
+    object-fit: cover;
+}
+
+.avt-friend-chat {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    object-fit: cover;
+}
+
+.avt-ativities {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.greem-dot {
+    background-color: #00ff51;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+    border-radius: 8px;
+    border: solid 2px #18191a;
+}
+
+.scroll {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #575757;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #6a6a6a;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #3e3e3e;
+}
+
+.name-friend-chat {
+    padding: 5px 0 0 18px;
+    height: fit-content;
+}
+
+.text-friend {
+    padding-left: 15px;
+}
+
+.box-acp {
+    font: normal 500 14px system-ui;
+    display: inline-flex;
+}
+
+.acp {
+    height: 30px;
+    width: 110px;
+    background-color: #3982e4;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.del {
+    padding-top: 4px;
+    height: 30px;
+    width: 110px;
+    background-color: #444546;
+    text-align: center;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+/* =============================================================== */
+
+.stack-menu {
+    box-sizing: border-box;
+    list-style: none;
+    height: fit-content;
+    width: 100%;
+    padding-left: 10px;
+    color: #fffcf8;
+}
+
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    padding-left: 10px;
+    margin: 5px 0 5px 0;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    background-color: #343536;
+}
+
+#menu-avt {
+    height: 36px;
+    width: 36px;
+    margin-right: 4px;
+    border-radius: 18px;
+}
+
+.menu-icon {
+    text-align: left;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+}
+
+.menu-icon-shortcut {
+    text-align: left;
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+    border-radius: 5px;
+    object-fit: cover;
+    /*giữ ảnh 1:1 */
+}
+
+.line-menu {
+    border-top: solid 1px #343536;
+    margin: 0 10px 0 20px;
+    width: 230px;
+}
+
+
+/* ======================================= */
+
+.newsfeed {
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+    height: calc(100vh - 80px);
+    flex: 1;
+}
+
+.box-story {
+    display: flex;
+    position: relative;
+    flex-flow: wrap;
+    width: fit-content;
+    min-width: 580px;
+    margin: auto;
+    height: 240px;
+    justify-content: space-between;
+}
+
+.tag-story {
+    position: relative;
+    width: 135px;
+    margin: 0 3px 0 3px;
+    height: 100%;
+    background-color: #202122;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.tag-story:hover {
+    cursor: pointer;
+}
+
+.tag-story:first-child {
+    margin-left: 0;
+}
+
+.tag-story:last-child {
+    margin-right: 0;
+}
+
+.avt-story {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 4;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 23px;
+    border: solid 5px #297be5;
+}
+
+.content-story {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.green-dot-story {
+    background-color: #00ff51;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    border-radius: 7px;
+    border: solid 2px #18191a;
+    z-index: 5;
+}
+
+.nameuser-story {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    text-shadow: rgb(169, 169, 169) 1px 0 5px;
+    z-index: 4;
+}
+
+.uravt-story {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 45px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.create-story {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    background-color: #297be5;
+    border-radius: 19px;
+    border: solid 3px #202122;
+    bottom: 28px;
+    left: 52px;
+    z-index: 1;
+}
+
+.create-story-text {
+    position: absolute;
+    bottom: 5px;
+    left: 34px;
+}
+
+.more-story {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    background-color: #297be5;
+    border-radius: 19px;
+    border: solid 3px #202122;
+    z-index: 10;
+    right: -20px;
+    top: 100px;
+}
+
+
+/* ========================= */
+
+.create-feed {
+    margin: auto;
+    margin-top: 20px;
+    min-width: 580px;
+    max-width: 700px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+
+.top-crefeed {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#avt-crefeed {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 22.5px;
+}
+
+#avt-crefeed:hover {
+    cursor: pointer;
+}
+
+#bar-crefeed {
+    width: 90%;
+    height: 45px;
+    background-color: #4e4f50;
+    border-radius: 22.5px;
+    position: relative;
+}
+
+#bar-crefeed:hover {
+    cursor: pointer;
+}
+
+#text-crefeed {
+    position: absolute;
+    color: #b4b6bb;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: auto;
+    top: 10px;
+    left: 10px;
+}
+
+.line-crefeed {
+    border-bottom: solid 1px #b4b6bb;
+    width: 95%;
+    margin: auto;
+}
+
+.bottom-crefeed {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.tag-crefeed {
+    width: 30%;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-crefeed:hover {
+    background-color: #3a3b3c;
+    cursor: pointer;
+}
+
+.emoij-crefeed {
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 6px;
+}
+
+.tcrefeed {
+    color: #b4b5ba;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* ========================== */
+
+.stackfeed {
+    margin: auto;
+    margin-top: 10px;
+    min-width: 580px;
+    max-width: 700px;
+    height: fit-content;
+}
+
+.feed-box {
+    width: 100%;
+    background-color: #242526;
+    max-height: fit-content;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.title-feed {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.avt-feed {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+}
+
+.avt-feed:hover {
+    cursor: pointer;
+}
+
+.info-feed {
+    margin: auto;
+    margin-left: 5px;
+}
+
+.info-feed:hover {
+    cursor: pointer;
+}
+
+.username-feed {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.time-feed {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.caption-feed {
+    font: normal 500 14px system-ui;
+    padding-left: 5px;
+    color: #ffffff;
+    margin: 0px 0 10px 10px;
+}
+
+.img-box {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.vid-box {
+    width: 100%;
+    height: 120%;
+    object-fit: contain;
+}
+
+.i-box {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.react-feed {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 20px;
+}
+
+.info-react {
+    display: flex;
+}
+
+.info-react:hover {
+    cursor: pointer;
+}
+
+.text-react {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.text-react:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.more-info-react {
+    display: flex;
+}
+
+.react {
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.react-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.tag-react {
+    display: flex;
+    width: 30%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.tag-react:hover {
+    background-color: #3a3b3c;
+    cursor: pointer;
+}
+
+.tag-react-icon {
+    color: #7f7f7f;
+    padding-top: 3px;
+}
+
+.tag-react-text {
+    padding: 0;
+    margin: 0 0 0 5px;
+    color: #787878;
+}
+
+
+/*  */
+
+.box-react-select {
+    display: none;
+    position: absolute;
+    background-color: #343436;
+    top: -50px;
+    width: 320px;
+    height: 50px;
+    font-size: 44px;
+    padding: 0px 10px 10px 25px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.react-select {
+    position: relative;
+}
+
+.react-select:hover .box-react-select {
+    display: block;
+}
+
+.reactemoij:hover {
+    animation: zoomin 0.1s ease-in forwards;
+}
+
+@keyframes zoomin {
+    from {
+        font-size: 44px;
+    }
+    to {
+        font-size: 55px;
+    }
+}
