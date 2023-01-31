@@ -53,6 +53,17 @@
     border-radius: 20px;
     margin: 0 5px;
     overflow: hidden;
+    text-align: center;
+}
+
+.icon-dock {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 9px;
+}
+
+.icon-item:hover {
+    cursor: pointer;
 }
 
 .seachbox {
