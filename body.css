@@ -1,5 +1,5 @@
 .body {
-    height: fit-content;
+    height: 100%;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -632,14 +632,7 @@ h3 {
     animation: zoomin 0.1s ease-in forwards;
 }
 
-@keyframes zoomin {
-    from {
-        font-size: 44px;
-    }
-    to {
-        font-size: 55px;
-    }
-}
+
 
 .cmt-box {
     width: 100%;
@@ -673,4 +666,12 @@ h3 {
     font: normal 450 16px system-ui;
     color: #b4b6bb;
     border: none;
+}
+@keyframes zoomin {
+    from {
+        font-size: 44px;
+    }
+    to {
+        font-size: 55px;
+    }
 }
