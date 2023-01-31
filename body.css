@@ -64,13 +64,13 @@ h3 {
     margin: 0;
     list-style: none;
     height: fit-content;
-    width: 95%;
-    min-width: 300px;
+    min-width: 200px;
     padding-left: 10px;
     color: #fffcf8;
 }
 
 .obj-friend {
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     height: fit-content;
@@ -145,16 +145,20 @@ h3 {
 
 .text-friend {
     padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .box-acp {
     font: normal 500 14px system-ui;
+    width: 100%;
+    min-width: 100px;
     display: inline-flex;
 }
 
 .acp {
     height: 30px;
-    width: 110px;
+    width: 100%;
     background-color: #3982e4;
     border-radius: 6px;
     text-align: center;
@@ -166,7 +170,7 @@ h3 {
 .del {
     padding-top: 4px;
     height: 30px;
-    width: 110px;
+    width: 100%;
     background-color: #444546;
     text-align: center;
     border-radius: 6px;
@@ -244,12 +248,12 @@ h3 {
     display: flex;
     position: relative;
     flex-flow: wrap;
+    flex-wrap: nowrap;
     width: fit-content;
-    min-width: 580px;
+    min-width: 10px;
     margin: auto;
     height: 240px;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .tag-story {
@@ -476,6 +480,7 @@ h3 {
     width: 45px;
     height: 45px;
     border-radius: 22.5px;
+    object-fit: cover;
 }
 
 .avt-feed:hover {
@@ -634,4 +639,38 @@ h3 {
     to {
         font-size: 55px;
     }
+}
+
+.cmt-box {
+    width: 100%;
+    height: fit-content;
+    /* background-color: #00ff51; */
+}
+
+.ur-cmt {
+    padding: 18px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.avt-urcmt {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #e56b29;
+}
+
+.bar-cmt {
+    flex: 1;
+    margin-left: 10px;
+    background-color: #3a3b3c;
+    border-radius: 24px;
+    align-content: center;
+    padding: 0px 0 0 18px;
+    font: normal 450 16px system-ui;
+    color: #b4b6bb;
+    border: none;
 }
