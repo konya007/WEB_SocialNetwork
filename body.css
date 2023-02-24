@@ -1,3 +1,14 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+        .menu-left 
+        {
+            display: none;
+        }
+        .menu-right{
+            display: none;
+        }
+}
+
 .body {
     height: 100%;
     width: 100vw;
@@ -632,7 +643,14 @@ h3 {
     animation: zoomin 0.1s ease-in forwards;
 }
 
-
+@keyframes zoomin {
+    from {
+        font-size: 44px;
+    }
+    to {
+        font-size: 55px;
+    }
+}
 
 .cmt-box {
     width: 100%;
@@ -666,12 +684,4 @@ h3 {
     font: normal 450 16px system-ui;
     color: #b4b6bb;
     border: none;
-}
-@keyframes zoomin {
-    from {
-        font-size: 44px;
-    }
-    to {
-        font-size: 55px;
-    }
 }
